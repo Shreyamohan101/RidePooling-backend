@@ -594,7 +594,6 @@ ride-pooling-backend/
 │   └── server.js                    # Server entry point
 ├── logs/                            # Application logs
 ├── .env                             # Environment variables
-├── .env.example                     # Environment template
 ├── .gitignore                       # Git ignore rules
 ├── package.json                     # Dependencies
 └── README.md                        # This file
