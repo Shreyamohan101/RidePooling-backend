@@ -305,12 +305,11 @@ npm start
 You should see:
 
 ```
-╔═══════════════════════════════════════════════════════════╗
-║  Smart Airport Ride Pooling Backend Server               ║
-║  Environment: development                                 ║
-║  Port: 3000                                               ║
-║  API Version: v1                                          ║
-╚═══════════════════════════════════════════════════════════╝
+
+ Smart Airport Ride Pooling Backend Server               
+ Environment: development                                 
+ Port: 3000                                               
+ API Version: v1                                          
 ```
 
 ### Verify Server is Running
@@ -400,8 +399,8 @@ Content-Type: application/json
 {
   "name": "Test User",
   "email": "test@example.com",
-  "phone": "5551234567",
-  "password": "password123"
+  "phone": "9876543210",
+  "password": "12345678"
 }
 ```
 
@@ -415,10 +414,10 @@ Expected Response (201):
       "_id": "...",
       "name": "Test User",
       "email": "test@example.com",
-      "phone": "5551234567",
+      "phone": "9876543210",
       "role": "passenger"
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    "token": "eyJhbGciOiJIUzI1NjhovgsInR5cCI6IkpjhjvCJ9..."
   }
 }
 ```
