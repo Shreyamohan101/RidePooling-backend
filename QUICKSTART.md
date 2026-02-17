@@ -72,12 +72,11 @@ npm run dev
 
 You should see:
 ```
-╔═══════════════════════════════════════════════════════════╗
-║  Smart Airport Ride Pooling Backend Server               ║
-║  Environment: development                                 ║
-║  Port: 3000                                               ║
-║  API Version: v1                                          ║
-╚═══════════════════════════════════════════════════════════╝
+
+Smart Airport Ride Pooling Backend Server               
+Environment: development                                 
+Port: 3000                                               
+API Version: v1                                          
 ```
 
 ### 6. Test It Works (1 minute)
