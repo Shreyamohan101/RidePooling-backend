@@ -770,11 +770,7 @@ For issues or questions:
 1. Check this README
 2. Review API documentation
 3. Check logs in `logs/` directory
-4. Contact: [your-email@example.com]
-
-## 📄 License
-
-MIT License - feel free to use this project for learning or commercial purposes.
+4. Contact: [shreyamohan.me@gmail.com]
 
 ---
 
