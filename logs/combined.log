@@ -1,0 +1,58 @@
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:19"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:19"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:19"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:23"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:23"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:23"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:29"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:29"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:19:29"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:22:12"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:22:12"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:22:12"}
+{"level":"info","message":"SIGINT received. Starting graceful shutdown...","service":"ride-pooling-service","timestamp":"2026-02-17 17:22:39"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:51:41"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:51:41"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:51:41"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 17:58:19"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 17:58:19"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 17:58:19"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:41"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:41"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:41"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:48"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:48"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:48"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:53"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:53"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:53"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:58"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:58"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:03:58"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:02"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:02"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:02"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:05"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:05"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:05"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:07"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:07"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:07"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:09"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:09"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:09"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:12"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:12"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:12"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:15"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:15"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:15"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:20"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:20"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:20"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:22"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:22"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:22"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}

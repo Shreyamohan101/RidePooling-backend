@@ -1,0 +1,327 @@
+{
+  "info": {
+    "name": "Smart Airport Ride Pooling API",
+    "description": "Complete API collection for testing the ride pooling backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.environment.set('token', response.data.token);",
+                  "    pm.environment.set('userId', response.data.user._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"phone\": \"5551234567\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "register"]
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    const response = pm.response.json();",
+                  "    pm.environment.set('token', response.data.token);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "login"]
+            }
+          }
+        },
+        {
+          "name": "Get Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/profile",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "profile"]
+            }
+          }
+        },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Name\",\n  \"preferences\": {\n    \"maxDetourTolerance\": 7,\n    \"allowSharing\": true\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/profile",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "profile"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ride Requests",
+      "item": [
+        {
+          "name": "Create Ride Request",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.environment.set('rideId', response.data.rideRequest._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pickup\": {\n    \"coordinates\": [77.1025, 28.7041],\n    \"address\": \"Indira Gandhi International Airport, Terminal 3\",\n    \"city\": \"New Delhi\",\n    \"airport\": \"DEL\",\n    \"terminal\": \"T3\"\n  },\n  \"dropoff\": {\n    \"coordinates\": [77.2090, 28.6139],\n    \"address\": \"Connaught Place, New Delhi\",\n    \"city\": \"New Delhi\"\n  },\n  \"passengers\": 2,\n  \"luggage\": 2,\n  \"preferences\": {\n    \"maxDetourTolerance\": 5,\n    \"allowSharing\": true\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rides",
+              "host": ["{{baseUrl}}"],
+              "path": ["rides"]
+            }
+          }
+        },
+        {
+          "name": "List Ride Requests",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/rides?status=pending&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["rides"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Ride Request",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/rides/{{rideId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["rides", "{{rideId}}"]
+            }
+          }
+        },
+        {
+          "name": "Cancel Ride Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reason\": \"Plans changed\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rides/{{rideId}}/cancel",
+              "host": ["{{baseUrl}}"],
+              "path": ["rides", "{{rideId}}", "cancel"]
+            }
+          }
+        },
+        {
+          "name": "Estimate Price",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pickup\": {\n    \"coordinates\": [77.1025, 28.7041]\n  },\n  \"dropoff\": {\n    \"coordinates\": [77.2090, 28.6139]\n  },\n  \"passengers\": 2,\n  \"allowSharing\": true\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rides/estimate-price",
+              "host": ["{{baseUrl}}"],
+              "path": ["rides", "estimate-price"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pool Groups",
+      "item": [
+        {
+          "name": "Get Pool Group",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/pools/{{poolId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["pools", "{{poolId}}"]
+            }
+          }
+        },
+        {
+          "name": "List Pool Groups (Admin)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/pools?status=forming&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["pools"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "forming"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
