@@ -109,7 +109,7 @@ rideRequestSchema.methods.isValid = function() {
   }
   
   const now = new Date();
-  const expiryTime = new Date(this.requestedAt.getTime() + 30 * 60 * 1000);
+  const expiryTime = new Date(this.requestedAt.getTime() + 30 * 60 * 1000); 
   
   return now < expiryTime;
 };

@@ -56,3 +56,7 @@
 {"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}
 {"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}
 {"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:04:23"}
+{"level":"info","message":"MongoDB connected successfully","service":"ride-pooling-service","timestamp":"2026-02-17 18:15:07"}
+{"level":"info","message":"Database: RidePoolingDB","service":"ride-pooling-service","timestamp":"2026-02-17 18:15:07"}
+{"level":"info","message":"\nSmart Airport Ride Pooling Backend Server              \nEnvironment: development                                \nPort: 3000                                              \nAPI Version: v1                                         \n      ","service":"ride-pooling-service","timestamp":"2026-02-17 18:15:07"}
+{"level":"info","message":"SIGINT received. Starting graceful shutdown...","service":"ride-pooling-service","timestamp":"2026-02-17 18:15:24"}
